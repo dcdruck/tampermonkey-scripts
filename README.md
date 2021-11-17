@@ -3,6 +3,10 @@ This is a collection of Tampermonkey scripts that I have written for myself.
 
 ## Scripts
 
+### detrackify-link-urls.js
+
+Scans the DOM for any <a href> elements that have destination URLs encoded in a tracking or refferal URL. For any it can detect, it will replace the entire URL with the decoded destination URL instead. This is a work in progress and only a handful of URL formats are currently detected, but I add more as I encounter them. This runs on every page and runs every few seconds in order to detect new links that appear.
+
 ### kohlscharge-keyboard-nav-fix.js
 
 Adds tabIndex properties to the username, password, and submit buttons on the My Kohls Charge login page, thus enabling proper keyboard navigation.
