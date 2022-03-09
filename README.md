@@ -18,3 +18,7 @@ Attempts to detect the age gate form at the Ubisoft store (store.ubisoft.com) an
 ### altpress-quiz-repair.js
 
 My browser privacy settings and add-ons prevent the AltPress quizzes, hoster by Apester, from displaying normally inline. This script will detect those frames and replace them with a link to open the quiz in a new window instead.
+
+### clipcentric-editor-keyboard-nav.js
+
+Adds Open and Save keyboard shortcuts (Ctrl+O and Ctrl+S) to the Clipcentric DisplayAd Studio, template editor, AMP editor, and video editor. This is compatible with v10 and newer.
