@@ -22,3 +22,12 @@ My browser privacy settings and add-ons prevent the AltPress quizzes, hoster by 
 ### clipcentric-editor-keyboard-nav.js
 
 Adds Open and Save keyboard shortcuts (Ctrl+O and Ctrl+S) to the Clipcentric DisplayAd Studio, template editor, AMP editor, and video editor. This is compatible with v10 and newer.
+
+### dummy-tracking-libraries-for-broken-sites.js
+
+I use privacy-protecting features that often cause third-party libraries to
+fail to load. Many sites choke when this happens and won't function. Often,
+this happens because the site code doesn't check for variables, objects,
+functions, libraries, etc before calling them. This script, which runs on all
+pages, defines some of these missing libraries (only if they don't already
+exist on the page) as dummy functions that have no actual effect.
