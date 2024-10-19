@@ -31,6 +31,7 @@
 
     if (!win._satellite) {
         win._satellite = df('track', {
+            getVar: null,
             getVisitorId: null,
             setVars: null,
             setVar: null,
@@ -40,7 +41,7 @@
     }
 
     if (!win.s) {
-        win.s = df('t', 'tl', 'clearVars', {
+        win.s = df('t', 'tl', 'clearVars', 'visitor', {
             getVisitNum: 1,
             getDaysSinceLastVisit: 666
         });
@@ -90,6 +91,12 @@
 
     if (!win.hbspt) {
         win.hbspt = df();
+    }
+
+    // Zenni: login won't work without google
+    if (!win.google) {
+        win.google = df('accounts');
+        win.google.accounts.id = df('initialize','renderButton');
     }
 
     function df() {
